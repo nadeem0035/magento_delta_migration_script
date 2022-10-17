@@ -26,4 +26,5 @@ Delete from url_rewrite where url_rewrite_id in ( select url_rewrite_id
       having count(*) > 1) t
   )
 ```
-  3. Script was testing while importing data from `magento 1.9.3.2` to `magnento 2.4.4`
+ 3. Script was testing while importing data from `magento 1.9.3.2` to `magnento 2.4.4`
+ 4. You can put the script (`script.php`) anywhere on the server you just need to make sure it can connect to both (m1 & m2) databases by updating database conflagrations in file (`connect.php`)
